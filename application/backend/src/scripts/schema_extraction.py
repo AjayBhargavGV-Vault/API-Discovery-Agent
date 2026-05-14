@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import hashlib
 import html
 import json
@@ -387,28 +386,3 @@ class SchemaExtraction:
         with path.open("w", encoding="utf-8") as target:
             json.dump(records, target, indent=2)
             target.write("\n")
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Extract reusable schemas from OpenAPI components.")
-    parser.add_argument("--spec", type=Path, default=DEFAULT_SPEC_PATH)
-    parser.add_argument("--api-specs", type=Path, default=DEFAULT_API_SPECS_PATH)
-    parser.add_argument("--api-schemas", type=Path, default=DEFAULT_API_SCHEMAS_PATH)
-    parser.add_argument("--api-schema-fields", type=Path, default=DEFAULT_API_SCHEMA_FIELDS_PATH)
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-    extraction = SchemaExtraction(
-        spec_path=args.spec,
-        api_specs_path=args.api_specs,
-        api_schemas_path=args.api_schemas,
-        api_schema_fields_path=args.api_schema_fields,
-    )
-    schemas, fields = extraction.extract()
-    print(json.dumps({"schema_count": len(schemas), "field_count": len(fields)}, indent=2))
-
-
-if __name__ == "__main__":
-    main()

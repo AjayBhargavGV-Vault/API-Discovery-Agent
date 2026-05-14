@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -115,33 +114,7 @@ class RawSpecIntake:
         return records
 
     def upsert_api_spec_record(self, record: dict[str, Any]) -> None:
-        records = self.read_api_specs()
-        records = [item for item in records if item.get("id") != record["id"]]
-        records.append(record)
-        records.sort(key=lambda item: (item.get("provider", ""), item.get("api_version", "")))
-
         self.api_specs_path.parent.mkdir(parents=True, exist_ok=True)
         with self.api_specs_path.open("w", encoding="utf-8") as target:
-            json.dump(records, target, indent=2)
+            json.dump([record], target, indent=2)
             target.write("\n")
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Create an api_specs record from a raw OpenAPI spec.")
-    parser.add_argument("--spec", type=Path, default=DEFAULT_SPEC_PATH)
-    parser.add_argument("--api-specs", type=Path, default=DEFAULT_API_SPECS_PATH)
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-    intake = RawSpecIntake(
-        spec_path=args.spec,
-        api_specs_path=args.api_specs,
-    )
-    record = intake.ingest()
-    print(json.dumps(record, indent=2))
-
-
-if __name__ == "__main__":
-    main()

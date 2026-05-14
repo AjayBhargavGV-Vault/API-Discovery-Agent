@@ -1,0 +1,1232 @@
+{
+  "collection_name": "api_search_documents",
+  "embedding_model": "BAAI/bge-large-en-v1.5",
+  "top_k": 5,
+  "queries": [
+    {
+      "query": "How do I confirm a Stripe payment?",
+      "filter_runs": [
+        {
+          "filter": null,
+          "results": [
+            {
+              "score": 0.7010388970375061,
+              "entity_type": "operation",
+              "title": "Confirm a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/confirm",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:8009f28ff8b6e36623e3",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/confirm HTTP method: POST Path: /v1/payment_intents/{intent}/confirm Operation ID: PostPaymentIntentsIntentConfirm Summary: Confirm a PaymentIntent Description: Confirm that your customer intends to pay with current or provided payment method. Upon confirmation, the PaymentIntent will attempt to initiate a payment. If the selected payment method requires additional authentication steps,..."
+            },
+            {
+              "score": 0.7004588842391968,
+              "entity_type": "schema",
+              "title": "ConfirmationTokensResourceConfirmationToken",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:da849fb570047c0c581b",
+              "body_preview": "ConfirmationTokensResourceConfirmationToken schema. Schema name: confirmation_token Schema title: ConfirmationTokensResourceConfirmationToken Schema description: ConfirmationTokens help transport client side data collected by Stripe JS over to your server for confirming a PaymentIntent or SetupIntent. If the confirmation is successful, values present on the ConfirmationToken are written onto the Intent. To learn more about how to use ConfirmationToken, visit the related guides: - [Finalize payme..."
+            },
+            {
+              "score": 0.6743505001068115,
+              "entity_type": "operation",
+              "title": "Confirm a SetupIntent",
+              "method": "POST",
+              "path": "/v1/setup_intents/{intent}/confirm",
+              "product_key": "setup_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:dc2157c658456b17a6da",
+              "body_preview": "Setup Intents API. Product name: Setup Intents Business domain: payments POST /v1/setup_intents/{intent}/confirm HTTP method: POST Path: /v1/setup_intents/{intent}/confirm Operation ID: PostSetupIntentsIntentConfirm Summary: Confirm a SetupIntent Description: Confirm that your customer intends to set up the current or provided payment method. For example, you would confirm a SetupIntent when a customer hits the \u201cSave\u201d button on a payment method management page on your website. If the selected pa..."
+            },
+            {
+              "score": 0.6699978113174438,
+              "entity_type": "schema",
+              "title": "Invoice",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:5052993d7c1515167b66",
+              "body_preview": "Invoice schema. Schema name: invoice Schema title: Invoice Schema description: Invoices are statements of amounts owed by a customer, and are either generated one-off, or generated periodically from a subscription. They contain [invoice items](https://api.stripe.com#invoiceitems), and proration adjustments that may be caused by subscription upgrades/downgrades (if necessary). If your invoice is configured to be billed through automatic charges, Stripe automatically finalizes your invoice and att..."
+            },
+            {
+              "score": 0.6625334024429321,
+              "entity_type": "schema",
+              "title": "Charge",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:1c7513f1066a778d1ac4",
+              "body_preview": "Charge schema. Schema name: charge Schema title: Charge Schema description: The `Charge` object represents a single attempt to move money into your Stripe account. PaymentIntent confirmation is the most common way to create Charges, but [Account Debits](https://docs.stripe.com/connect/account-debits) may also create Charges. Some legacy payment flows create Charges directly, which is not recommended for new integrations. Schema type: object Required fields: amount, amount_captured, amount_refund..."
+            }
+          ]
+        },
+        {
+          "filter": "entity_type == \"operation\"",
+          "results": [
+            {
+              "score": 0.7010388970375061,
+              "entity_type": "operation",
+              "title": "Confirm a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/confirm",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:8009f28ff8b6e36623e3",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/confirm HTTP method: POST Path: /v1/payment_intents/{intent}/confirm Operation ID: PostPaymentIntentsIntentConfirm Summary: Confirm a PaymentIntent Description: Confirm that your customer intends to pay with current or provided payment method. Upon confirmation, the PaymentIntent will attempt to initiate a payment. If the selected payment method requires additional authentication steps,..."
+            },
+            {
+              "score": 0.6743505001068115,
+              "entity_type": "operation",
+              "title": "Confirm a SetupIntent",
+              "method": "POST",
+              "path": "/v1/setup_intents/{intent}/confirm",
+              "product_key": "setup_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:dc2157c658456b17a6da",
+              "body_preview": "Setup Intents API. Product name: Setup Intents Business domain: payments POST /v1/setup_intents/{intent}/confirm HTTP method: POST Path: /v1/setup_intents/{intent}/confirm Operation ID: PostSetupIntentsIntentConfirm Summary: Confirm a SetupIntent Description: Confirm that your customer intends to set up the current or provided payment method. For example, you would confirm a SetupIntent when a customer hits the \u201cSave\u201d button on a payment method management page on your website. If the selected pa..."
+            },
+            {
+              "score": 0.6607549786567688,
+              "entity_type": "operation",
+              "title": "Send an invoice for manual payment",
+              "method": "POST",
+              "path": "/v1/invoices/{invoice}/send",
+              "product_key": "invoices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:52e0350a58274728231f",
+              "body_preview": "Invoices API. Product name: Invoices Business domain: billing POST /v1/invoices/{invoice}/send HTTP method: POST Path: /v1/invoices/{invoice}/send Operation ID: PostInvoicesInvoiceSend Summary: Send an invoice for manual payment Description: Stripe will automatically send invoices to customers according to your subscriptions settings . However, if you\u2019d like to manually send an invoice to your customer out of the normal schedule, you can do so. When sending invoices that have already been paid, ..."
+            },
+            {
+              "score": 0.6601265072822571,
+              "entity_type": "operation",
+              "title": "Create a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:e40fca585495be9e52f5",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents HTTP method: POST Path: /v1/payment_intents Operation ID: PostPaymentIntents Summary: Create a PaymentIntent Description: Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API . When you use confirm=true during creation, it\u2019s equivalent to creating ..."
+            },
+            {
+              "score": 0.6565201282501221,
+              "entity_type": "operation",
+              "title": "Retrieve a ConfirmationToken",
+              "method": "GET",
+              "path": "/v1/confirmation_tokens/{confirmation_token}",
+              "product_key": "confirmation_tokens",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:98322f33840a21696d36",
+              "body_preview": "Confirmation Tokens API. Product name: Confirmation Tokens Business domain: payments GET /v1/confirmation_tokens/{confirmation_token} HTTP method: GET Path: /v1/confirmation_tokens/{confirmation_token} Operation ID: GetConfirmationTokensConfirmationToken Summary: Retrieve a ConfirmationToken Description: Retrieves an existing ConfirmationToken object Operation type: retrieve Parameters: confirmation_token (path) required string, expand (query) optional array Request schema: none Request fields: ..."
+            }
+          ]
+        },
+        {
+          "filter": "business_domain == \"payments\"",
+          "results": [
+            {
+              "score": 0.7010388970375061,
+              "entity_type": "operation",
+              "title": "Confirm a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/confirm",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:8009f28ff8b6e36623e3",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/confirm HTTP method: POST Path: /v1/payment_intents/{intent}/confirm Operation ID: PostPaymentIntentsIntentConfirm Summary: Confirm a PaymentIntent Description: Confirm that your customer intends to pay with current or provided payment method. Upon confirmation, the PaymentIntent will attempt to initiate a payment. If the selected payment method requires additional authentication steps,..."
+            },
+            {
+              "score": 0.6743505001068115,
+              "entity_type": "operation",
+              "title": "Confirm a SetupIntent",
+              "method": "POST",
+              "path": "/v1/setup_intents/{intent}/confirm",
+              "product_key": "setup_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:dc2157c658456b17a6da",
+              "body_preview": "Setup Intents API. Product name: Setup Intents Business domain: payments POST /v1/setup_intents/{intent}/confirm HTTP method: POST Path: /v1/setup_intents/{intent}/confirm Operation ID: PostSetupIntentsIntentConfirm Summary: Confirm a SetupIntent Description: Confirm that your customer intends to set up the current or provided payment method. For example, you would confirm a SetupIntent when a customer hits the \u201cSave\u201d button on a payment method management page on your website. If the selected pa..."
+            },
+            {
+              "score": 0.6601265072822571,
+              "entity_type": "operation",
+              "title": "Create a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:e40fca585495be9e52f5",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents HTTP method: POST Path: /v1/payment_intents Operation ID: PostPaymentIntents Summary: Create a PaymentIntent Description: Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API . When you use confirm=true during creation, it\u2019s equivalent to creating ..."
+            },
+            {
+              "score": 0.6565201282501221,
+              "entity_type": "operation",
+              "title": "Retrieve a ConfirmationToken",
+              "method": "GET",
+              "path": "/v1/confirmation_tokens/{confirmation_token}",
+              "product_key": "confirmation_tokens",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:98322f33840a21696d36",
+              "body_preview": "Confirmation Tokens API. Product name: Confirmation Tokens Business domain: payments GET /v1/confirmation_tokens/{confirmation_token} HTTP method: GET Path: /v1/confirmation_tokens/{confirmation_token} Operation ID: GetConfirmationTokensConfirmationToken Summary: Retrieve a ConfirmationToken Description: Retrieves an existing ConfirmationToken object Operation type: retrieve Parameters: confirmation_token (path) required string, expand (query) optional array Request schema: none Request fields: ..."
+            },
+            {
+              "score": 0.6539738178253174,
+              "entity_type": "operation",
+              "title": "Search PaymentIntents",
+              "method": "GET",
+              "path": "/v1/payment_intents/search",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:c0030f643c22101c3bbb",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments GET /v1/payment_intents/search HTTP method: GET Path: /v1/payment_intents/search Operation ID: GetPaymentIntentsSearch Summary: Search PaymentIntents Description: Search for PaymentIntents you\u2019ve previously created using Stripe\u2019s Search Query Language . Don\u2019t use search in read-after-write flows where strict consistency is necessary. Under normal operating conditions, data is searchable in less than a minute. Occasional..."
+            }
+          ]
+        },
+        {
+          "filter": "method == \"POST\"",
+          "results": [
+            {
+              "score": 0.7010388970375061,
+              "entity_type": "operation",
+              "title": "Confirm a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/confirm",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:8009f28ff8b6e36623e3",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/confirm HTTP method: POST Path: /v1/payment_intents/{intent}/confirm Operation ID: PostPaymentIntentsIntentConfirm Summary: Confirm a PaymentIntent Description: Confirm that your customer intends to pay with current or provided payment method. Upon confirmation, the PaymentIntent will attempt to initiate a payment. If the selected payment method requires additional authentication steps,..."
+            },
+            {
+              "score": 0.6743505001068115,
+              "entity_type": "operation",
+              "title": "Confirm a SetupIntent",
+              "method": "POST",
+              "path": "/v1/setup_intents/{intent}/confirm",
+              "product_key": "setup_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:dc2157c658456b17a6da",
+              "body_preview": "Setup Intents API. Product name: Setup Intents Business domain: payments POST /v1/setup_intents/{intent}/confirm HTTP method: POST Path: /v1/setup_intents/{intent}/confirm Operation ID: PostSetupIntentsIntentConfirm Summary: Confirm a SetupIntent Description: Confirm that your customer intends to set up the current or provided payment method. For example, you would confirm a SetupIntent when a customer hits the \u201cSave\u201d button on a payment method management page on your website. If the selected pa..."
+            },
+            {
+              "score": 0.6607549786567688,
+              "entity_type": "operation",
+              "title": "Send an invoice for manual payment",
+              "method": "POST",
+              "path": "/v1/invoices/{invoice}/send",
+              "product_key": "invoices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:52e0350a58274728231f",
+              "body_preview": "Invoices API. Product name: Invoices Business domain: billing POST /v1/invoices/{invoice}/send HTTP method: POST Path: /v1/invoices/{invoice}/send Operation ID: PostInvoicesInvoiceSend Summary: Send an invoice for manual payment Description: Stripe will automatically send invoices to customers according to your subscriptions settings . However, if you\u2019d like to manually send an invoice to your customer out of the normal schedule, you can do so. When sending invoices that have already been paid, ..."
+            },
+            {
+              "score": 0.6601265072822571,
+              "entity_type": "operation",
+              "title": "Create a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:e40fca585495be9e52f5",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents HTTP method: POST Path: /v1/payment_intents Operation ID: PostPaymentIntents Summary: Create a PaymentIntent Description: Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API . When you use confirm=true during creation, it\u2019s equivalent to creating ..."
+            },
+            {
+              "score": 0.6532547473907471,
+              "entity_type": "operation",
+              "title": "Pay an invoice",
+              "method": "POST",
+              "path": "/v1/invoices/{invoice}/pay",
+              "product_key": "invoices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:5d51eba0ed1a8438b1a6",
+              "body_preview": "Invoices API. Product name: Invoices Business domain: billing POST /v1/invoices/{invoice}/pay HTTP method: POST Path: /v1/invoices/{invoice}/pay Operation ID: PostInvoicesInvoicePay Summary: Pay an invoice Description: Stripe automatically creates and then attempts to collect payment on invoices for customers on subscriptions according to your subscriptions settings . However, if you\u2019d like to attempt payment on an invoice out of the normal collection schedule or for some other reason, you can d..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Which API creates a customer?",
+      "filter_runs": [
+        {
+          "filter": null,
+          "results": [
+            {
+              "score": 0.7738149166107178,
+              "entity_type": "operation",
+              "title": "Create a customer",
+              "method": "POST",
+              "path": "/v1/customers",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:7ff9cecfed91f31f22bc",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers HTTP method: POST Path: /v1/customers Operation ID: PostCustomers Summary: Create a customer Description: Creates a new customer object. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: customer, error Response fields: customer.address, customer.address.anyOf[0], customer.balance, customer.business_name, customer.cash_balance, customer.cash_balance.anyOf[0], custom..."
+            },
+            {
+              "score": 0.7377382516860962,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/cards",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:a38cab9fe8a4934c0222",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/cards HTTP method: POST Path: /v1/customers/{customer}/cards Operation ID: PostCustomersCustomerCards Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change the d..."
+            },
+            {
+              "score": 0.7323949337005615,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/sources",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:6a4eb4148319bbd693d1",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/sources HTTP method: POST Path: /v1/customers/{customer}/sources Operation ID: PostCustomersCustomerSources Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change..."
+            },
+            {
+              "score": 0.7303661704063416,
+              "entity_type": "operation",
+              "title": "Create a Customer tax ID",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/tax_ids",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:da660bb6c955009288e8",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/tax_ids HTTP method: POST Path: /v1/customers/{customer}/tax_ids Operation ID: PostCustomersCustomerTaxIds Summary: Create a Customer tax ID Description: Creates a new tax_id object for a customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: type, value, customer Response schema: error, tax_id Response fields: error.error, tax_id.country, tax_i..."
+            },
+            {
+              "score": 0.7302939295768738,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/bank_accounts",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:ad0ce8668b3661e009b5",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/bank_accounts HTTP method: POST Path: /v1/customers/{customer}/bank_accounts Operation ID: PostCustomersCustomerBankAccounts Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not ..."
+            }
+          ]
+        },
+        {
+          "filter": "entity_type == \"operation\"",
+          "results": [
+            {
+              "score": 0.7738149166107178,
+              "entity_type": "operation",
+              "title": "Create a customer",
+              "method": "POST",
+              "path": "/v1/customers",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:7ff9cecfed91f31f22bc",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers HTTP method: POST Path: /v1/customers Operation ID: PostCustomers Summary: Create a customer Description: Creates a new customer object. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: customer, error Response fields: customer.address, customer.address.anyOf[0], customer.balance, customer.business_name, customer.cash_balance, customer.cash_balance.anyOf[0], custom..."
+            },
+            {
+              "score": 0.7377382516860962,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/cards",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:a38cab9fe8a4934c0222",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/cards HTTP method: POST Path: /v1/customers/{customer}/cards Operation ID: PostCustomersCustomerCards Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change the d..."
+            },
+            {
+              "score": 0.7323949337005615,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/sources",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:6a4eb4148319bbd693d1",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/sources HTTP method: POST Path: /v1/customers/{customer}/sources Operation ID: PostCustomersCustomerSources Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change..."
+            },
+            {
+              "score": 0.7303661704063416,
+              "entity_type": "operation",
+              "title": "Create a Customer tax ID",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/tax_ids",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:da660bb6c955009288e8",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/tax_ids HTTP method: POST Path: /v1/customers/{customer}/tax_ids Operation ID: PostCustomersCustomerTaxIds Summary: Create a Customer tax ID Description: Creates a new tax_id object for a customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: type, value, customer Response schema: error, tax_id Response fields: error.error, tax_id.country, tax_i..."
+            },
+            {
+              "score": 0.7302939295768738,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/bank_accounts",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:ad0ce8668b3661e009b5",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/bank_accounts HTTP method: POST Path: /v1/customers/{customer}/bank_accounts Operation ID: PostCustomersCustomerBankAccounts Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not ..."
+            }
+          ]
+        },
+        {
+          "filter": "business_domain == \"payments\"",
+          "results": [
+            {
+              "score": 0.6510730385780334,
+              "entity_type": "operation",
+              "title": "Create a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:e40fca585495be9e52f5",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents HTTP method: POST Path: /v1/payment_intents Operation ID: PostPaymentIntents Summary: Create a PaymentIntent Description: Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API . When you use confirm=true during creation, it\u2019s equivalent to creating ..."
+            },
+            {
+              "score": 0.6481500864028931,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/refunds",
+              "product_key": "refunds",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9b1d05bbdbdcadec9856",
+              "body_preview": "Refunds API. Product name: Refunds Business domain: payments POST /v1/refunds HTTP method: POST Path: /v1/refunds Operation ID: PostRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refun..."
+            },
+            {
+              "score": 0.633456826210022,
+              "entity_type": "operation",
+              "title": "Attach a PaymentMethod to a Customer",
+              "method": "POST",
+              "path": "/v1/payment_methods/{payment_method}/attach",
+              "product_key": "payment_methods",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:785b29c9fc1786c79443",
+              "body_preview": "Payment Methods API. Product name: Payment Methods Business domain: payments POST /v1/payment_methods/{payment_method}/attach HTTP method: POST Path: /v1/payment_methods/{payment_method}/attach Operation ID: PostPaymentMethodsPaymentMethodAttach Summary: Attach a PaymentMethod to a Customer Description: Attaches a PaymentMethod object to a Customer. To attach a new PaymentMethod to a customer for future payments, we recommend you use a SetupIntent or a PaymentIntent with setup_future_usage . The..."
+            },
+            {
+              "score": 0.6310716867446899,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refunds",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:f5dd74535d110a74fe2f",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refunds HTTP method: POST Path: /v1/charges/{charge}/refunds Operation ID: PostChargesChargeRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that w..."
+            },
+            {
+              "score": 0.6244219541549683,
+              "entity_type": "operation",
+              "title": "Shares a PaymentMethod",
+              "method": "POST",
+              "path": "/v1/payment_methods",
+              "product_key": "payment_methods",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:10fa7e7a699ec5ea8745",
+              "body_preview": "Payment Methods API. Product name: Payment Methods Business domain: payments POST /v1/payment_methods HTTP method: POST Path: /v1/payment_methods Operation ID: PostPaymentMethods Summary: Shares a PaymentMethod Description: Creates a PaymentMethod object. Read the Stripe.js reference to learn how to create PaymentMethods via Stripe.js. Instead of creating a PaymentMethod directly, we recommend using the PaymentIntents API to accept a payment immediately or the SetupIntent API to collect payment ..."
+            }
+          ]
+        },
+        {
+          "filter": "method == \"POST\"",
+          "results": [
+            {
+              "score": 0.7738149166107178,
+              "entity_type": "operation",
+              "title": "Create a customer",
+              "method": "POST",
+              "path": "/v1/customers",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:7ff9cecfed91f31f22bc",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers HTTP method: POST Path: /v1/customers Operation ID: PostCustomers Summary: Create a customer Description: Creates a new customer object. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: customer, error Response fields: customer.address, customer.address.anyOf[0], customer.balance, customer.business_name, customer.cash_balance, customer.cash_balance.anyOf[0], custom..."
+            },
+            {
+              "score": 0.7377382516860962,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/cards",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:a38cab9fe8a4934c0222",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/cards HTTP method: POST Path: /v1/customers/{customer}/cards Operation ID: PostCustomersCustomerCards Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change the d..."
+            },
+            {
+              "score": 0.7323949337005615,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/sources",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:6a4eb4148319bbd693d1",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/sources HTTP method: POST Path: /v1/customers/{customer}/sources Operation ID: PostCustomersCustomerSources Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not change. To change..."
+            },
+            {
+              "score": 0.7303661704063416,
+              "entity_type": "operation",
+              "title": "Create a Customer tax ID",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/tax_ids",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:da660bb6c955009288e8",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/tax_ids HTTP method: POST Path: /v1/customers/{customer}/tax_ids Operation ID: PostCustomersCustomerTaxIds Summary: Create a Customer tax ID Description: Creates a new tax_id object for a customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: type, value, customer Response schema: error, tax_id Response fields: error.error, tax_id.country, tax_i..."
+            },
+            {
+              "score": 0.7302939295768738,
+              "entity_type": "operation",
+              "title": "Create a card",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/bank_accounts",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:ad0ce8668b3661e009b5",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/bank_accounts HTTP method: POST Path: /v1/customers/{customer}/bank_accounts Operation ID: PostCustomersCustomerBankAccounts Summary: Create a card Description: When you create a new credit card, you must specify a customer or recipient on which to create it. If the card\u2019s owner has no default card, then the new card will become the default. However, if the owner already has a default, then it will not ..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "How do I refund a payment?",
+      "filter_runs": [
+        {
+          "filter": null,
+          "results": [
+            {
+              "score": 0.6811802387237549,
+              "entity_type": "operation",
+              "title": "Create a refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refund",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:a8fa04967b8963da0012",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refund HTTP method: POST Path: /v1/charges/{charge}/refund Operation ID: PostChargesChargeRefund Summary: Create a refund Description: When you create a new refund, you must specify either a Charge or a PaymentIntent object. This action refunds a previously created charge that\u2019s not refunded yet. Funds are refunded to the credit or debit card that\u2019s originally charged. You can optionally refund only part of a ..."
+            },
+            {
+              "score": 0.6782175302505493,
+              "entity_type": "operation",
+              "title": "Report a refund",
+              "method": "POST",
+              "path": "/v1/payment_records/{id}/report_refund",
+              "product_key": "payment_records",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:278b49b62811f6b580ee",
+              "body_preview": "Payment Records API. Product name: Payment Records Business domain: payments POST /v1/payment_records/{id}/report_refund HTTP method: POST Path: /v1/payment_records/{id}/report_refund Operation ID: PostPaymentRecordsIdReportRefund Summary: Report a refund Description: Report that the most recent payment attempt on the specified Payment Record was refunded. Operation type: action Parameters: id (path) required string Request schema: none Request fields: outcome, processor_details, refunded, id Re..."
+            },
+            {
+              "score": 0.6744723320007324,
+              "entity_type": "operation",
+              "title": "Cancel a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/cancel",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9123752fad46e00301d4",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/cancel HTTP method: POST Path: /v1/payment_intents/{intent}/cancel Operation ID: PostPaymentIntentsIntentCancel Summary: Cancel a PaymentIntent Description: You can cancel a PaymentIntent object when it\u2019s in one of these statuses: requires_payment_method , requires_capture , requires_confirmation , requires_action or, in rare cases , processing . After it\u2019s canceled, no additional charg..."
+            },
+            {
+              "score": 0.665661096572876,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refunds",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:f5dd74535d110a74fe2f",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refunds HTTP method: POST Path: /v1/charges/{charge}/refunds Operation ID: PostChargesChargeRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that w..."
+            },
+            {
+              "score": 0.6654176712036133,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/refunds",
+              "product_key": "refunds",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9b1d05bbdbdcadec9856",
+              "body_preview": "Refunds API. Product name: Refunds Business domain: payments POST /v1/refunds HTTP method: POST Path: /v1/refunds Operation ID: PostRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refun..."
+            }
+          ]
+        },
+        {
+          "filter": "entity_type == \"operation\"",
+          "results": [
+            {
+              "score": 0.6811802387237549,
+              "entity_type": "operation",
+              "title": "Create a refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refund",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:a8fa04967b8963da0012",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refund HTTP method: POST Path: /v1/charges/{charge}/refund Operation ID: PostChargesChargeRefund Summary: Create a refund Description: When you create a new refund, you must specify either a Charge or a PaymentIntent object. This action refunds a previously created charge that\u2019s not refunded yet. Funds are refunded to the credit or debit card that\u2019s originally charged. You can optionally refund only part of a ..."
+            },
+            {
+              "score": 0.6782175302505493,
+              "entity_type": "operation",
+              "title": "Report a refund",
+              "method": "POST",
+              "path": "/v1/payment_records/{id}/report_refund",
+              "product_key": "payment_records",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:278b49b62811f6b580ee",
+              "body_preview": "Payment Records API. Product name: Payment Records Business domain: payments POST /v1/payment_records/{id}/report_refund HTTP method: POST Path: /v1/payment_records/{id}/report_refund Operation ID: PostPaymentRecordsIdReportRefund Summary: Report a refund Description: Report that the most recent payment attempt on the specified Payment Record was refunded. Operation type: action Parameters: id (path) required string Request schema: none Request fields: outcome, processor_details, refunded, id Re..."
+            },
+            {
+              "score": 0.6744723320007324,
+              "entity_type": "operation",
+              "title": "Cancel a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/cancel",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9123752fad46e00301d4",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/cancel HTTP method: POST Path: /v1/payment_intents/{intent}/cancel Operation ID: PostPaymentIntentsIntentCancel Summary: Cancel a PaymentIntent Description: You can cancel a PaymentIntent object when it\u2019s in one of these statuses: requires_payment_method , requires_capture , requires_confirmation , requires_action or, in rare cases , processing . After it\u2019s canceled, no additional charg..."
+            },
+            {
+              "score": 0.665661096572876,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refunds",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:f5dd74535d110a74fe2f",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refunds HTTP method: POST Path: /v1/charges/{charge}/refunds Operation ID: PostChargesChargeRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that w..."
+            },
+            {
+              "score": 0.6654176712036133,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/refunds",
+              "product_key": "refunds",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9b1d05bbdbdcadec9856",
+              "body_preview": "Refunds API. Product name: Refunds Business domain: payments POST /v1/refunds HTTP method: POST Path: /v1/refunds Operation ID: PostRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refun..."
+            }
+          ]
+        },
+        {
+          "filter": "business_domain == \"payments\"",
+          "results": [
+            {
+              "score": 0.6811802387237549,
+              "entity_type": "operation",
+              "title": "Create a refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refund",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:a8fa04967b8963da0012",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refund HTTP method: POST Path: /v1/charges/{charge}/refund Operation ID: PostChargesChargeRefund Summary: Create a refund Description: When you create a new refund, you must specify either a Charge or a PaymentIntent object. This action refunds a previously created charge that\u2019s not refunded yet. Funds are refunded to the credit or debit card that\u2019s originally charged. You can optionally refund only part of a ..."
+            },
+            {
+              "score": 0.6782175302505493,
+              "entity_type": "operation",
+              "title": "Report a refund",
+              "method": "POST",
+              "path": "/v1/payment_records/{id}/report_refund",
+              "product_key": "payment_records",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:278b49b62811f6b580ee",
+              "body_preview": "Payment Records API. Product name: Payment Records Business domain: payments POST /v1/payment_records/{id}/report_refund HTTP method: POST Path: /v1/payment_records/{id}/report_refund Operation ID: PostPaymentRecordsIdReportRefund Summary: Report a refund Description: Report that the most recent payment attempt on the specified Payment Record was refunded. Operation type: action Parameters: id (path) required string Request schema: none Request fields: outcome, processor_details, refunded, id Re..."
+            },
+            {
+              "score": 0.6744723320007324,
+              "entity_type": "operation",
+              "title": "Cancel a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/cancel",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9123752fad46e00301d4",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/cancel HTTP method: POST Path: /v1/payment_intents/{intent}/cancel Operation ID: PostPaymentIntentsIntentCancel Summary: Cancel a PaymentIntent Description: You can cancel a PaymentIntent object when it\u2019s in one of these statuses: requires_payment_method , requires_capture , requires_confirmation , requires_action or, in rare cases , processing . After it\u2019s canceled, no additional charg..."
+            },
+            {
+              "score": 0.665661096572876,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refunds",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:f5dd74535d110a74fe2f",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refunds HTTP method: POST Path: /v1/charges/{charge}/refunds Operation ID: PostChargesChargeRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that w..."
+            },
+            {
+              "score": 0.6654176712036133,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/refunds",
+              "product_key": "refunds",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9b1d05bbdbdcadec9856",
+              "body_preview": "Refunds API. Product name: Refunds Business domain: payments POST /v1/refunds HTTP method: POST Path: /v1/refunds Operation ID: PostRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refun..."
+            }
+          ]
+        },
+        {
+          "filter": "method == \"POST\"",
+          "results": [
+            {
+              "score": 0.6811802387237549,
+              "entity_type": "operation",
+              "title": "Create a refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refund",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:a8fa04967b8963da0012",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refund HTTP method: POST Path: /v1/charges/{charge}/refund Operation ID: PostChargesChargeRefund Summary: Create a refund Description: When you create a new refund, you must specify either a Charge or a PaymentIntent object. This action refunds a previously created charge that\u2019s not refunded yet. Funds are refunded to the credit or debit card that\u2019s originally charged. You can optionally refund only part of a ..."
+            },
+            {
+              "score": 0.6782175302505493,
+              "entity_type": "operation",
+              "title": "Report a refund",
+              "method": "POST",
+              "path": "/v1/payment_records/{id}/report_refund",
+              "product_key": "payment_records",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:278b49b62811f6b580ee",
+              "body_preview": "Payment Records API. Product name: Payment Records Business domain: payments POST /v1/payment_records/{id}/report_refund HTTP method: POST Path: /v1/payment_records/{id}/report_refund Operation ID: PostPaymentRecordsIdReportRefund Summary: Report a refund Description: Report that the most recent payment attempt on the specified Payment Record was refunded. Operation type: action Parameters: id (path) required string Request schema: none Request fields: outcome, processor_details, refunded, id Re..."
+            },
+            {
+              "score": 0.6744723320007324,
+              "entity_type": "operation",
+              "title": "Cancel a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents/{intent}/cancel",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9123752fad46e00301d4",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents/{intent}/cancel HTTP method: POST Path: /v1/payment_intents/{intent}/cancel Operation ID: PostPaymentIntentsIntentCancel Summary: Cancel a PaymentIntent Description: You can cancel a PaymentIntent object when it\u2019s in one of these statuses: requires_payment_method , requires_capture , requires_confirmation , requires_action or, in rare cases , processing . After it\u2019s canceled, no additional charg..."
+            },
+            {
+              "score": 0.665661096572876,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refunds",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:f5dd74535d110a74fe2f",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refunds HTTP method: POST Path: /v1/charges/{charge}/refunds Operation ID: PostChargesChargeRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that w..."
+            },
+            {
+              "score": 0.6654176712036133,
+              "entity_type": "operation",
+              "title": "Create customer balance refund",
+              "method": "POST",
+              "path": "/v1/refunds",
+              "product_key": "refunds",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9b1d05bbdbdcadec9856",
+              "body_preview": "Refunds API. Product name: Refunds Business domain: payments POST /v1/refunds HTTP method: POST Path: /v1/refunds Operation ID: PostRefunds Summary: Create customer balance refund Description: When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refun..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Which schema contains currency?",
+      "filter_runs": [
+        {
+          "filter": null,
+          "results": [
+            {
+              "score": 0.7849006056785583,
+              "entity_type": "schema",
+              "title": "CurrencyOption",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:8585dbead48523ace8df",
+              "body_preview": "CurrencyOption schema. Schema name: currency_option Schema title: CurrencyOption Schema description: Schema type: object Required fields: none Properties: custom_unit_amount anyOf optional, custom_unit_amount.anyOf[0] ref optional, tax_behavior string optional, tiers array optional, unit_amount integer optional, unit_amount_decimal string optional Fields: custom_unit_amount, custom_unit_amount.anyOf[0], tax_behavior, tiers, unit_amount, unit_amount_decimal Enum values: tax_behavior=exclusive, ta..."
+            },
+            {
+              "score": 0.7648236751556396,
+              "entity_type": "schema",
+              "title": "PaymentPagesCheckoutSessionCurrencyConversion",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:5d4a1f65798f71f8ec83",
+              "body_preview": "PaymentPagesCheckoutSessionCurrencyConversion schema. Schema name: payment_pages_checkout_session_currency_conversion Schema title: PaymentPagesCheckoutSessionCurrencyConversion Schema description: Schema type: object Required fields: amount_subtotal, amount_total, fx_rate, source_currency Properties: amount_subtotal integer required, amount_total integer required, fx_rate string required, source_currency string required Fields: amount_subtotal, amount_total, fx_rate, source_currency Enum values..."
+            },
+            {
+              "score": 0.759685754776001,
+              "entity_type": "schema",
+              "title": "BillingCreditGrantsResourceMonetaryAmount",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:5c96c7ddfacca456e279",
+              "body_preview": "BillingCreditGrantsResourceMonetaryAmount schema. Schema name: billing_credit_grants_resource_monetary_amount Schema title: BillingCreditGrantsResourceMonetaryAmount Schema description: Schema type: object Required fields: currency, value Properties: currency string required, value integer required Fields: currency, value Enum values: none Referenced schemas: none Sensitive field hints: none"
+            },
+            {
+              "score": 0.7560785412788391,
+              "entity_type": "schema",
+              "title": "mandate_single_use",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:3d11c8028db3bd2cf33e",
+              "body_preview": "mandate_single_use schema. Schema name: mandate_single_use Schema title: mandate_single_use Schema description: Schema type: object Required fields: amount, currency Properties: amount integer required, currency string required Fields: amount, currency Enum values: none Referenced schemas: none Sensitive field hints: none"
+            },
+            {
+              "score": 0.7550034523010254,
+              "entity_type": "schema",
+              "title": "CouponCurrencyOption",
+              "method": "",
+              "path": "",
+              "product_key": "",
+              "business_domain": "",
+              "neo4j_node_id": "schema:f08dc31c0955140632d5",
+              "body_preview": "CouponCurrencyOption schema. Schema name: coupon_currency_option Schema title: CouponCurrencyOption Schema description: Schema type: object Required fields: amount_off Properties: amount_off integer required Fields: amount_off Enum values: none Referenced schemas: none Sensitive field hints: none"
+            }
+          ]
+        },
+        {
+          "filter": "entity_type == \"operation\"",
+          "results": [
+            {
+              "score": 0.6295135617256165,
+              "entity_type": "operation",
+              "title": "Retrieve an exchange rate",
+              "method": "GET",
+              "path": "/v1/exchange_rates/{rate_id}",
+              "product_key": "exchange_rates",
+              "business_domain": "specialized",
+              "neo4j_node_id": "operation:b8ec8698c9e40c9e5bba",
+              "body_preview": "Exchange Rates API. Product name: Exchange Rates Business domain: specialized GET /v1/exchange_rates/{rate_id} HTTP method: GET Path: /v1/exchange_rates/{rate_id} Operation ID: GetExchangeRatesRateId Summary: Retrieve an exchange rate Description: [Deprecated] The ExchangeRate APIs are deprecated. Please use the FX Quotes API instead. Retrieves the exchange rates from the given currency to every supported currency. Operation type: retrieve Parameters: expand (query) optional array, rate_id (path..."
+            },
+            {
+              "score": 0.6068374514579773,
+              "entity_type": "operation",
+              "title": "Retrieve a TransactionEntry",
+              "method": "GET",
+              "path": "/v1/treasury/transaction_entries/{id}",
+              "product_key": "treasury",
+              "business_domain": "money_movement",
+              "neo4j_node_id": "operation:371e0f9378aaf6ec6918",
+              "body_preview": "Treasury API. Product name: Treasury Business domain: money_movement GET /v1/treasury/transaction_entries/{id} HTTP method: GET Path: /v1/treasury/transaction_entries/{id} Operation ID: GetTreasuryTransactionEntriesId Summary: Retrieve a TransactionEntry Description: Retrieves a TransactionEntry object. Operation type: retrieve Parameters: expand (query) optional array, id (path) required string Request schema: none Request fields: id Response schema: error, treasury.transaction_entry Response f..."
+            },
+            {
+              "score": 0.6047935485839844,
+              "entity_type": "operation",
+              "title": "List all exchange rates",
+              "method": "GET",
+              "path": "/v1/exchange_rates",
+              "product_key": "exchange_rates",
+              "business_domain": "specialized",
+              "neo4j_node_id": "operation:149d32463b07cf4c8942",
+              "body_preview": "Exchange Rates API. Product name: Exchange Rates Business domain: specialized GET /v1/exchange_rates HTTP method: GET Path: /v1/exchange_rates Operation ID: GetExchangeRates Summary: List all exchange rates Description: [Deprecated] The ExchangeRate APIs are deprecated. Please use the FX Quotes API instead. Returns a list of objects that contain the rates at which foreign currencies are converted to one another. Only shows the currencies for which Stripe supports. Operation type: list Parameters..."
+            },
+            {
+              "score": 0.6046988368034363,
+              "entity_type": "operation",
+              "title": "Create a price",
+              "method": "POST",
+              "path": "/v1/prices",
+              "product_key": "prices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:e1f424a3d40c11de6d16",
+              "body_preview": "Prices API. Product name: Prices Business domain: billing POST /v1/prices HTTP method: POST Path: /v1/prices Operation ID: PostPrices Summary: Create a price Description: Creates a new Price for an existing Product . The Price can be recurring or one-time. Operation type: create Parameters: none Request schema: none Request fields: currency Response schema: error, price Response fields: error.error, price.active, price.billing_scheme, price.created, price.currency, price.currency_options, price...."
+            },
+            {
+              "score": 0.6042375564575195,
+              "entity_type": "operation",
+              "title": "List all TransactionEntries",
+              "method": "GET",
+              "path": "/v1/treasury/transaction_entries",
+              "product_key": "treasury",
+              "business_domain": "money_movement",
+              "neo4j_node_id": "operation:df6bec4da0e2f2dfcd57",
+              "body_preview": "Treasury API. Product name: Treasury Business domain: money_movement GET /v1/treasury/transaction_entries HTTP method: GET Path: /v1/treasury/transaction_entries Operation ID: GetTreasuryTransactionEntries Summary: List all TransactionEntries Description: Retrieves a list of TransactionEntry objects. Operation type: list Parameters: created (query) optional, effective_at (query) optional, ending_before (query) optional string, expand (query) optional array, financial_account (query) required str..."
+            }
+          ]
+        },
+        {
+          "filter": "business_domain == \"payments\"",
+          "results": [
+            {
+              "score": 0.6064638495445251,
+              "entity_type": "product",
+              "title": "Payment Methods",
+              "method": "",
+              "path": "",
+              "product_key": "payment_methods",
+              "business_domain": "payments",
+              "neo4j_node_id": "product:87b4ff9d79b806935db8",
+              "body_preview": "Payment Methods API product. Product key: payment_methods Display name: Payment Methods Business domain: payments API version: v1 Path prefixes: /v1/payment_methods Operation count: 6 Endpoint count: 6 Schema count: 0 Path count: 4 Summary: Payment Methods belongs to the payments domain and contains 6 operations under /v1/payment_methods."
+            },
+            {
+              "score": 0.6007000803947449,
+              "entity_type": "product",
+              "title": "Payment Method Configurations",
+              "method": "",
+              "path": "",
+              "product_key": "payment_method_configurations",
+              "business_domain": "payments",
+              "neo4j_node_id": "product:83422aac1a75829ef1ba",
+              "body_preview": "Payment Method Configurations API product. Product key: payment_method_configurations Display name: Payment Method Configurations Business domain: payments API version: v1 Path prefixes: /v1/payment_method_configurations Operation count: 4 Endpoint count: 4 Schema count: 0 Path count: 2 Summary: Payment Method Configurations belongs to the payments domain and contains 4 operations under /v1/payment_method_configurations."
+            },
+            {
+              "score": 0.5824165344238281,
+              "entity_type": "product",
+              "title": "Payment Method Domains",
+              "method": "",
+              "path": "",
+              "product_key": "payment_method_domains",
+              "business_domain": "payments",
+              "neo4j_node_id": "product:090b66f70fbcb50f987d",
+              "body_preview": "Payment Method Domains API product. Product key: payment_method_domains Display name: Payment Method Domains Business domain: payments API version: v1 Path prefixes: /v1/payment_method_domains Operation count: 5 Endpoint count: 5 Schema count: 0 Path count: 3 Summary: Payment Method Domains belongs to the payments domain and contains 5 operations under /v1/payment_method_domains."
+            },
+            {
+              "score": 0.5800759792327881,
+              "entity_type": "product",
+              "title": "Payment Records",
+              "method": "",
+              "path": "",
+              "product_key": "payment_records",
+              "business_domain": "payments",
+              "neo4j_node_id": "product:a8fe1530ae54e74d06a3",
+              "body_preview": "Payment Records API product. Product key: payment_records Display name: Payment Records Business domain: payments API version: v1 Path prefixes: /v1/payment_records Operation count: 8 Endpoint count: 8 Schema count: 0 Path count: 8 Summary: Payment Records belongs to the payments domain and contains 8 operations under /v1/payment_records."
+            },
+            {
+              "score": 0.571975827217102,
+              "entity_type": "product",
+              "title": "Confirmation Tokens",
+              "method": "",
+              "path": "",
+              "product_key": "confirmation_tokens",
+              "business_domain": "payments",
+              "neo4j_node_id": "product:3520b9de8c1411ab56c5",
+              "body_preview": "Confirmation Tokens API product. Product key: confirmation_tokens Display name: Confirmation Tokens Business domain: payments API version: v1 Path prefixes: /v1/confirmation_tokens Operation count: 1 Endpoint count: 1 Schema count: 0 Path count: 1 Summary: Confirmation Tokens belongs to the payments domain and contains 1 operations under /v1/confirmation_tokens."
+            }
+          ]
+        },
+        {
+          "filter": "method == \"POST\"",
+          "results": [
+            {
+              "score": 0.6046988368034363,
+              "entity_type": "operation",
+              "title": "Create a price",
+              "method": "POST",
+              "path": "/v1/prices",
+              "product_key": "prices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:e1f424a3d40c11de6d16",
+              "body_preview": "Prices API. Product name: Prices Business domain: billing POST /v1/prices HTTP method: POST Path: /v1/prices Operation ID: PostPrices Summary: Create a price Description: Creates a new Price for an existing Product . The Price can be recurring or one-time. Operation type: create Parameters: none Request schema: none Request fields: currency Response schema: error, price Response fields: error.error, price.active, price.billing_scheme, price.created, price.currency, price.currency_options, price...."
+            },
+            {
+              "score": 0.5986742973327637,
+              "entity_type": "operation",
+              "title": "POST /v1/accounts/{account}/external_accounts/{id}",
+              "method": "POST",
+              "path": "/v1/accounts/{account}/external_accounts/{id}",
+              "product_key": "accounts",
+              "business_domain": "connect",
+              "neo4j_node_id": "operation:abd05d72b812c8460635",
+              "body_preview": "Accounts API. Product name: Accounts Business domain: connect POST /v1/accounts/{account}/external_accounts/{id} HTTP method: POST Path: /v1/accounts/{account}/external_accounts/{id} Operation ID: PostAccountsAccountExternalAccountsId Summary: None Description: Updates the metadata, account holder name, account holder type of a bank account belonging to a connected account and optionally sets it as the default for its currency. Other bank account details are not editable by design. You can only ..."
+            },
+            {
+              "score": 0.59211665391922,
+              "entity_type": "operation",
+              "title": "POST /v1/accounts/{account}/bank_accounts/{id}",
+              "method": "POST",
+              "path": "/v1/accounts/{account}/bank_accounts/{id}",
+              "product_key": "accounts",
+              "business_domain": "connect",
+              "neo4j_node_id": "operation:9c15d4b969c31b972b56",
+              "body_preview": "Accounts API. Product name: Accounts Business domain: connect POST /v1/accounts/{account}/bank_accounts/{id} HTTP method: POST Path: /v1/accounts/{account}/bank_accounts/{id} Operation ID: PostAccountsAccountBankAccountsId Summary: None Description: Updates the metadata, account holder name, account holder type of a bank account belonging to a connected account and optionally sets it as the default for its currency. Other bank account details are not editable by design. You can only update bank ..."
+            },
+            {
+              "score": 0.5867691040039062,
+              "entity_type": "operation",
+              "title": "POST /v1/external_accounts/{id}",
+              "method": "POST",
+              "path": "/v1/external_accounts/{id}",
+              "product_key": "external_accounts",
+              "business_domain": "connect",
+              "neo4j_node_id": "operation:832ad6b375a61d21898a",
+              "body_preview": "External Accounts API. Product name: External Accounts Business domain: connect POST /v1/external_accounts/{id} HTTP method: POST Path: /v1/external_accounts/{id} Operation ID: PostExternalAccountsId Summary: None Description: Updates the metadata, account holder name, account holder type of a bank account belonging to a connected account and optionally sets it as the default for its currency. Other bank account details are not editable by design. You can only update bank accounts when account.c..."
+            },
+            {
+              "score": 0.5864874124526978,
+              "entity_type": "operation",
+              "title": "Update a price",
+              "method": "POST",
+              "path": "/v1/prices/{price}",
+              "product_key": "prices",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:f0d0b0b54a93d7d5d5a5",
+              "body_preview": "Prices API. Product name: Prices Business domain: billing POST /v1/prices/{price} HTTP method: POST Path: /v1/prices/{price} Operation ID: PostPricesPrice Summary: Update a price Description: Updates the specified price by setting the values of the parameters passed. Any parameters not provided are left unchanged. Operation type: update Parameters: price (path) required string Request schema: none Request fields: price Response schema: error, price Response fields: error.error, price.active, pri..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "How do I create a subscription?",
+      "filter_runs": [
+        {
+          "filter": null,
+          "results": [
+            {
+              "score": 0.7525463104248047,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:af4299c9d67baf37c09f",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions HTTP method: POST Path: /v1/subscriptions Operation ID: PostSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions. When you create a subscription with collection_method=charge_automatically , the first invoice is finalized as part of the request. The payment_behavior parameter dete..."
+            },
+            {
+              "score": 0.7235846519470215,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/subscriptions",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:faa57d4aa2a8234c1bda",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/subscriptions HTTP method: POST Path: /v1/customers/{customer}/subscriptions Operation ID: PostCustomersCustomerSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: customer Response schema: error, subscription Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6866238117218018,
+              "entity_type": "operation",
+              "title": "Create a subscription item",
+              "method": "POST",
+              "path": "/v1/subscription_items",
+              "product_key": "subscription_items",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:fcb157929008e6a3fa21",
+              "body_preview": "Subscription Items API. Product name: Subscription Items Business domain: billing POST /v1/subscription_items HTTP method: POST Path: /v1/subscription_items Operation ID: PostSubscriptionItems Summary: Create a subscription item Description: Adds a new item to an existing subscription. No existing items will be changed or replaced. Operation type: create Parameters: none Request schema: none Request fields: subscription Response schema: error, subscription_item Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6802423000335693,
+              "entity_type": "operation",
+              "title": "Create a schedule",
+              "method": "POST",
+              "path": "/v1/subscription_schedules",
+              "product_key": "subscription_schedules",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:60dcc5a79161ccb9e295",
+              "body_preview": "Subscription Schedules API. Product name: Subscription Schedules Business domain: billing POST /v1/subscription_schedules HTTP method: POST Path: /v1/subscription_schedules Operation ID: PostSubscriptionSchedules Summary: Create a schedule Description: Creates a new subscription schedule object. Each customer can have up to 500 active or scheduled subscriptions. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: error, subscription_schedule Respons..."
+            },
+            {
+              "score": 0.6715359091758728,
+              "entity_type": "operation",
+              "title": "Update a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions/{subscription_exposed_id}",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:f14177f1174c15910ebe",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions/{subscription_exposed_id} HTTP method: POST Path: /v1/subscriptions/{subscription_exposed_id} Operation ID: PostSubscriptionsSubscriptionExposedId Summary: Update a subscription Description: Updates an existing subscription to match the specified parameters. When changing prices or quantities, we optionally prorate the price we charge next month to make up for any price changes. To preview how the pror..."
+            }
+          ]
+        },
+        {
+          "filter": "entity_type == \"operation\"",
+          "results": [
+            {
+              "score": 0.7525463104248047,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:af4299c9d67baf37c09f",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions HTTP method: POST Path: /v1/subscriptions Operation ID: PostSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions. When you create a subscription with collection_method=charge_automatically , the first invoice is finalized as part of the request. The payment_behavior parameter dete..."
+            },
+            {
+              "score": 0.7235846519470215,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/subscriptions",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:faa57d4aa2a8234c1bda",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/subscriptions HTTP method: POST Path: /v1/customers/{customer}/subscriptions Operation ID: PostCustomersCustomerSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: customer Response schema: error, subscription Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6866238117218018,
+              "entity_type": "operation",
+              "title": "Create a subscription item",
+              "method": "POST",
+              "path": "/v1/subscription_items",
+              "product_key": "subscription_items",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:fcb157929008e6a3fa21",
+              "body_preview": "Subscription Items API. Product name: Subscription Items Business domain: billing POST /v1/subscription_items HTTP method: POST Path: /v1/subscription_items Operation ID: PostSubscriptionItems Summary: Create a subscription item Description: Adds a new item to an existing subscription. No existing items will be changed or replaced. Operation type: create Parameters: none Request schema: none Request fields: subscription Response schema: error, subscription_item Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6802423000335693,
+              "entity_type": "operation",
+              "title": "Create a schedule",
+              "method": "POST",
+              "path": "/v1/subscription_schedules",
+              "product_key": "subscription_schedules",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:60dcc5a79161ccb9e295",
+              "body_preview": "Subscription Schedules API. Product name: Subscription Schedules Business domain: billing POST /v1/subscription_schedules HTTP method: POST Path: /v1/subscription_schedules Operation ID: PostSubscriptionSchedules Summary: Create a schedule Description: Creates a new subscription schedule object. Each customer can have up to 500 active or scheduled subscriptions. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: error, subscription_schedule Respons..."
+            },
+            {
+              "score": 0.6715359091758728,
+              "entity_type": "operation",
+              "title": "Update a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions/{subscription_exposed_id}",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:f14177f1174c15910ebe",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions/{subscription_exposed_id} HTTP method: POST Path: /v1/subscriptions/{subscription_exposed_id} Operation ID: PostSubscriptionsSubscriptionExposedId Summary: Update a subscription Description: Updates an existing subscription to match the specified parameters. When changing prices or quantities, we optionally prorate the price we charge next month to make up for any price changes. To preview how the pror..."
+            }
+          ]
+        },
+        {
+          "filter": "business_domain == \"payments\"",
+          "results": [
+            {
+              "score": 0.5443831086158752,
+              "entity_type": "operation",
+              "title": "Shares a source",
+              "method": "POST",
+              "path": "/v1/sources",
+              "product_key": "sources",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:4b17a0b2443bc76dbb6e",
+              "body_preview": "Sources API. Product name: Sources Business domain: payments POST /v1/sources HTTP method: POST Path: /v1/sources Operation ID: PostSources Summary: Shares a source Description: Creates a new source object. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: error, source Response fields: error.error, source.ach_credit_transfer, source.ach_debit, source.acss_debit, source.alipay, source.allow_redisplay, source.amount, source.au_becs_debit, source.ba..."
+            },
+            {
+              "score": 0.543304979801178,
+              "entity_type": "operation",
+              "title": "Create a PaymentIntent",
+              "method": "POST",
+              "path": "/v1/payment_intents",
+              "product_key": "payment_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:e40fca585495be9e52f5",
+              "body_preview": "Payment Intents API. Product name: Payment Intents Business domain: payments POST /v1/payment_intents HTTP method: POST Path: /v1/payment_intents Operation ID: PostPaymentIntents Summary: Create a PaymentIntent Description: Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API . When you use confirm=true during creation, it\u2019s equivalent to creating ..."
+            },
+            {
+              "score": 0.5352935194969177,
+              "entity_type": "operation",
+              "title": "Create a SetupIntent",
+              "method": "POST",
+              "path": "/v1/setup_intents",
+              "product_key": "setup_intents",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:1d2d3a5ff4dc11030918",
+              "body_preview": "Setup Intents API. Product name: Setup Intents Business domain: payments POST /v1/setup_intents HTTP method: POST Path: /v1/setup_intents Operation ID: PostSetupIntents Summary: Create a SetupIntent Description: Creates a SetupIntent object. After you create the SetupIntent, attach a payment method and confirm it to collect any required permissions to charge the payment method later. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: error, setup_i..."
+            },
+            {
+              "score": 0.5281800627708435,
+              "entity_type": "operation",
+              "title": "Create a refund",
+              "method": "POST",
+              "path": "/v1/charges/{charge}/refund",
+              "product_key": "charges",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:a8fa04967b8963da0012",
+              "body_preview": "Charges API. Product name: Charges Business domain: payments POST /v1/charges/{charge}/refund HTTP method: POST Path: /v1/charges/{charge}/refund Operation ID: PostChargesChargeRefund Summary: Create a refund Description: When you create a new refund, you must specify either a Charge or a PaymentIntent object. This action refunds a previously created charge that\u2019s not refunded yet. Funds are refunded to the credit or debit card that\u2019s originally charged. You can optionally refund only part of a ..."
+            },
+            {
+              "score": 0.5235908627510071,
+              "entity_type": "operation",
+              "title": "Update a source",
+              "method": "POST",
+              "path": "/v1/sources/{source}",
+              "product_key": "sources",
+              "business_domain": "payments",
+              "neo4j_node_id": "operation:9c2af681b15219c72492",
+              "body_preview": "Sources API. Product name: Sources Business domain: payments POST /v1/sources/{source} HTTP method: POST Path: /v1/sources/{source} Operation ID: PostSourcesSource Summary: Update a source Description: Updates the specified source by setting the values of the parameters passed. Any parameters not provided will be left unchanged. This request accepts the metadata and owner as arguments. It is also possible to update type specific information for selected payment methods. Please refer to our payme..."
+            }
+          ]
+        },
+        {
+          "filter": "method == \"POST\"",
+          "results": [
+            {
+              "score": 0.7525463104248047,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:af4299c9d67baf37c09f",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions HTTP method: POST Path: /v1/subscriptions Operation ID: PostSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions. When you create a subscription with collection_method=charge_automatically , the first invoice is finalized as part of the request. The payment_behavior parameter dete..."
+            },
+            {
+              "score": 0.7235846519470215,
+              "entity_type": "operation",
+              "title": "Create a subscription",
+              "method": "POST",
+              "path": "/v1/customers/{customer}/subscriptions",
+              "product_key": "customers",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:faa57d4aa2a8234c1bda",
+              "body_preview": "Customers API. Product name: Customers Business domain: billing POST /v1/customers/{customer}/subscriptions HTTP method: POST Path: /v1/customers/{customer}/subscriptions Operation ID: PostCustomersCustomerSubscriptions Summary: Create a subscription Description: Creates a new subscription on an existing customer. Operation type: action Parameters: customer (path) required string Request schema: none Request fields: customer Response schema: error, subscription Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6866238117218018,
+              "entity_type": "operation",
+              "title": "Create a subscription item",
+              "method": "POST",
+              "path": "/v1/subscription_items",
+              "product_key": "subscription_items",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:fcb157929008e6a3fa21",
+              "body_preview": "Subscription Items API. Product name: Subscription Items Business domain: billing POST /v1/subscription_items HTTP method: POST Path: /v1/subscription_items Operation ID: PostSubscriptionItems Summary: Create a subscription item Description: Adds a new item to an existing subscription. No existing items will be changed or replaced. Operation type: create Parameters: none Request schema: none Request fields: subscription Response schema: error, subscription_item Response fields: error.error, subs..."
+            },
+            {
+              "score": 0.6802423000335693,
+              "entity_type": "operation",
+              "title": "Create a schedule",
+              "method": "POST",
+              "path": "/v1/subscription_schedules",
+              "product_key": "subscription_schedules",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:60dcc5a79161ccb9e295",
+              "body_preview": "Subscription Schedules API. Product name: Subscription Schedules Business domain: billing POST /v1/subscription_schedules HTTP method: POST Path: /v1/subscription_schedules Operation ID: PostSubscriptionSchedules Summary: Create a schedule Description: Creates a new subscription schedule object. Each customer can have up to 500 active or scheduled subscriptions. Operation type: create Parameters: none Request schema: none Request fields: none Response schema: error, subscription_schedule Respons..."
+            },
+            {
+              "score": 0.6715359091758728,
+              "entity_type": "operation",
+              "title": "Update a subscription",
+              "method": "POST",
+              "path": "/v1/subscriptions/{subscription_exposed_id}",
+              "product_key": "subscriptions",
+              "business_domain": "billing",
+              "neo4j_node_id": "operation:f14177f1174c15910ebe",
+              "body_preview": "Subscriptions API. Product name: Subscriptions Business domain: billing POST /v1/subscriptions/{subscription_exposed_id} HTTP method: POST Path: /v1/subscriptions/{subscription_exposed_id} Operation ID: PostSubscriptionsSubscriptionExposedId Summary: Update a subscription Description: Updates an existing subscription to match the specified parameters. When changing prices or quantities, we optionally prorate the price we charge next month to make up for any price changes. To preview how the pror..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

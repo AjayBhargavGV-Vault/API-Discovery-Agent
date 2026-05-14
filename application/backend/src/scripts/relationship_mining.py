@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -404,32 +403,3 @@ class RelationshipMining:
         with path.open("w", encoding="utf-8") as target:
             json.dump(records, target, indent=2)
             target.write("\n")
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Mine graph relationships from API catalog artifacts.")
-    parser.add_argument("--api-specs", type=Path, default=DEFAULT_API_SPECS_PATH)
-    parser.add_argument("--api-products", type=Path, default=DEFAULT_API_PRODUCTS_PATH)
-    parser.add_argument("--api-operations", type=Path, default=DEFAULT_API_OPERATIONS_PATH)
-    parser.add_argument("--api-schemas", type=Path, default=DEFAULT_API_SCHEMAS_PATH)
-    parser.add_argument("--api-schema-fields", type=Path, default=DEFAULT_API_SCHEMA_FIELDS_PATH)
-    parser.add_argument("--api-relationships", type=Path, default=DEFAULT_API_RELATIONSHIPS_PATH)
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-    mining = RelationshipMining(
-        api_specs_path=args.api_specs,
-        api_products_path=args.api_products,
-        api_operations_path=args.api_operations,
-        api_schemas_path=args.api_schemas,
-        api_schema_fields_path=args.api_schema_fields,
-        api_relationships_path=args.api_relationships,
-    )
-    relationships = mining.mine()
-    print(json.dumps({"relationship_count": len(relationships)}, indent=2))
-
-
-if __name__ == "__main__":
-    main()

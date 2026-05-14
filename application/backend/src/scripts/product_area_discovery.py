@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 import hashlib
 import json
 from datetime import datetime, timezone
@@ -288,26 +287,3 @@ class ProductAreaDiscovery:
         with self.api_products_path.open("w", encoding="utf-8") as target:
             json.dump(products, target, indent=2)
             target.write("\n")
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Discover API products from OpenAPI paths.")
-    parser.add_argument("--spec", type=Path, default=DEFAULT_SPEC_PATH)
-    parser.add_argument("--api-specs", type=Path, default=DEFAULT_API_SPECS_PATH)
-    parser.add_argument("--api-products", type=Path, default=DEFAULT_API_PRODUCTS_PATH)
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-    discovery = ProductAreaDiscovery(
-        spec_path=args.spec,
-        api_specs_path=args.api_specs,
-        api_products_path=args.api_products,
-    )
-    products = discovery.discover()
-    print(json.dumps(products, indent=2))
-
-
-if __name__ == "__main__":
-    main()
