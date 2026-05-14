@@ -1,0 +1,38 @@
+[
+  {
+    "id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "title": "Stripe API",
+    "description": "The Stripe REST API. Please see https://stripe.com/docs/api for more details.",
+    "openapi_version": "3.0.0",
+    "api_version": "2026-04-22.dahlia",
+    "release_phase": "ga",
+    "audience": "public",
+    "spec_filename": "spec3.ga.public",
+    "terms_of_service_url": "https://stripe.com/us/terms/",
+    "contact_name": "Stripe Dev Platform Team",
+    "contact_url": "https://stripe.com",
+    "contact_email": "dev-platform@stripe.com",
+    "server_urls": [
+      "https://api.stripe.com/"
+    ],
+    "source_path": "C:\\Users\\AJAY BHARGAV\\Documents\\GitHub\\API-Discovery-Agent\\application\\backend\\src\\data\\raw_specs\\openapi.spec3.yaml",
+    "source_sha256": "1e27c7f6bc52b5d5c0d6636937ae39cf503a3511f09788f96c63cb286fea60ee",
+    "raw_spec_path": "C:\\Users\\AJAY BHARGAV\\Documents\\GitHub\\API-Discovery-Agent\\application\\backend\\src\\data\\raw_specs\\openapi.spec3.yaml",
+    "path_count": 437,
+    "component_schema_count": 1541,
+    "security_scheme_names": [
+      "basicAuth",
+      "bearerAuth"
+    ],
+    "top_level_fields": [
+      "components",
+      "info",
+      "openapi",
+      "paths",
+      "security",
+      "servers"
+    ],
+    "ingested_at": "2026-05-14T11:00:23.407572+00:00"
+  }
+]

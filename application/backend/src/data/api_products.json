@@ -1,0 +1,1799 @@
+[
+  {
+    "id": "api_product:account:41711bb7066b8f01",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "account",
+    "display_name": "Account",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/account"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273632+00:00"
+  },
+  {
+    "id": "api_product:account_links:eda5febaf29fd3d6",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "account_links",
+    "display_name": "Account Links",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/account_links"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273654+00:00"
+  },
+  {
+    "id": "api_product:account_sessions:adf88e7d4f995b8e",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "account_sessions",
+    "display_name": "Account Sessions",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/account_sessions"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273660+00:00"
+  },
+  {
+    "id": "api_product:accounts:ae6bbb9a68837ae2",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "accounts",
+    "display_name": "Accounts",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/accounts"
+    ],
+    "path_count": 14,
+    "operation_count": 29,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273664+00:00"
+  },
+  {
+    "id": "api_product:apple_pay:636cc882371683f7",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "apple_pay",
+    "display_name": "Apple Pay",
+    "business_domain": "specialized",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/apple_pay"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "specialized"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273668+00:00"
+  },
+  {
+    "id": "api_product:application_fees:fc04c4485e07ca56",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "application_fees",
+    "display_name": "Application Fees",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/application_fees"
+    ],
+    "path_count": 5,
+    "operation_count": 7,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273672+00:00"
+  },
+  {
+    "id": "api_product:apps:f6befe057990c596",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "apps",
+    "display_name": "Apps",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/apps"
+    ],
+    "path_count": 3,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273675+00:00"
+  },
+  {
+    "id": "api_product:balance:34bf9eb68e3a437c",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "balance",
+    "display_name": "Balance",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/balance"
+    ],
+    "path_count": 3,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273678+00:00"
+  },
+  {
+    "id": "api_product:balance_settings:3958b82125862d58",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "balance_settings",
+    "display_name": "Balance Settings",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/balance_settings"
+    ],
+    "path_count": 1,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273681+00:00"
+  },
+  {
+    "id": "api_product:balance_transactions:75b0982baf046d81",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "balance_transactions",
+    "display_name": "Balance Transactions",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/balance_transactions"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273685+00:00"
+  },
+  {
+    "id": "api_product:billing:6427c50cd8cfbc74",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "billing",
+    "display_name": "Billing",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1",
+      "v2"
+    ],
+    "path_prefixes": [
+      "/v1/billing",
+      "/v2/billing"
+    ],
+    "path_count": 23,
+    "operation_count": 28,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273688+00:00"
+  },
+  {
+    "id": "api_product:billing_portal:2ed73998654993b6",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "billing_portal",
+    "display_name": "Billing Portal",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/billing_portal"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273693+00:00"
+  },
+  {
+    "id": "api_product:charges:3b54537f6b976478",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "charges",
+    "display_name": "Charges",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/charges"
+    ],
+    "path_count": 9,
+    "operation_count": 14,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273696+00:00"
+  },
+  {
+    "id": "api_product:checkout:61443d52f62b21bb",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "checkout",
+    "display_name": "Checkout",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/checkout"
+    ],
+    "path_count": 4,
+    "operation_count": 6,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273699+00:00"
+  },
+  {
+    "id": "api_product:climate:12370a38beb47acd",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "climate",
+    "display_name": "Climate",
+    "business_domain": "specialized",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/climate"
+    ],
+    "path_count": 7,
+    "operation_count": 9,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "specialized"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273703+00:00"
+  },
+  {
+    "id": "api_product:commerce:d97bcaec24cabc09",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "commerce",
+    "display_name": "Commerce",
+    "business_domain": "commerce",
+    "api_versions": [
+      "v2"
+    ],
+    "path_prefixes": [
+      "/v2/commerce"
+    ],
+    "path_count": 2,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "commerce"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273706+00:00"
+  },
+  {
+    "id": "api_product:confirmation_tokens:8d07a31d3b09f589",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "confirmation_tokens",
+    "display_name": "Confirmation Tokens",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/confirmation_tokens"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273710+00:00"
+  },
+  {
+    "id": "api_product:core:e7b000f6f983bf76",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "core",
+    "display_name": "Core",
+    "business_domain": "core",
+    "api_versions": [
+      "v2"
+    ],
+    "path_prefixes": [
+      "/v2/core"
+    ],
+    "path_count": 17,
+    "operation_count": 25,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "core"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273713+00:00"
+  },
+  {
+    "id": "api_product:country_specs:c2688b482c3acee1",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "country_specs",
+    "display_name": "Country Specs",
+    "business_domain": "specialized",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/country_specs"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "specialized"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273716+00:00"
+  },
+  {
+    "id": "api_product:coupons:715138e6a499f034",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "coupons",
+    "display_name": "Coupons",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/coupons"
+    ],
+    "path_count": 2,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273719+00:00"
+  },
+  {
+    "id": "api_product:credit_notes:5dbddb1e52304d8b",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "credit_notes",
+    "display_name": "Credit Notes",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/credit_notes"
+    ],
+    "path_count": 6,
+    "operation_count": 8,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273722+00:00"
+  },
+  {
+    "id": "api_product:customer_sessions:aeee6769d3dd818b",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "customer_sessions",
+    "display_name": "Customer Sessions",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/customer_sessions"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273725+00:00"
+  },
+  {
+    "id": "api_product:customers:77a8e3ae5188de36",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "customers",
+    "display_name": "Customers",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/customers"
+    ],
+    "path_count": 25,
+    "operation_count": 47,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273728+00:00"
+  },
+  {
+    "id": "api_product:disputes:25bdf310b9c34c95",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "disputes",
+    "display_name": "Disputes",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/disputes"
+    ],
+    "path_count": 3,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273731+00:00"
+  },
+  {
+    "id": "api_product:entitlements:7e6746d8ce5cda76",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "entitlements",
+    "display_name": "Entitlements",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/entitlements"
+    ],
+    "path_count": 4,
+    "operation_count": 6,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273734+00:00"
+  },
+  {
+    "id": "api_product:ephemeral_keys:3b99db17f698f696",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "ephemeral_keys",
+    "display_name": "Ephemeral Keys",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/ephemeral_keys"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273737+00:00"
+  },
+  {
+    "id": "api_product:events:df03dbf8cacf0fbb",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "events",
+    "display_name": "Events",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/events"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273740+00:00"
+  },
+  {
+    "id": "api_product:exchange_rates:7dc2740ff8150629",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "exchange_rates",
+    "display_name": "Exchange Rates",
+    "business_domain": "specialized",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/exchange_rates"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "specialized"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273743+00:00"
+  },
+  {
+    "id": "api_product:external_accounts:aaeca2b320631daa",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "external_accounts",
+    "display_name": "External Accounts",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/external_accounts"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273745+00:00"
+  },
+  {
+    "id": "api_product:file_links:15497498f63e26c7",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "file_links",
+    "display_name": "File Links",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/file_links"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273748+00:00"
+  },
+  {
+    "id": "api_product:files:b6d693eef75bb5ca",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "files",
+    "display_name": "Files",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/files"
+    ],
+    "path_count": 2,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273750+00:00"
+  },
+  {
+    "id": "api_product:financial_connections:a79603e8b4814b2b",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "financial_connections",
+    "display_name": "Financial Connections",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/financial_connections"
+    ],
+    "path_count": 11,
+    "operation_count": 11,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273753+00:00"
+  },
+  {
+    "id": "api_product:forwarding:17dd1e416172c54a",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "forwarding",
+    "display_name": "Forwarding",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/forwarding"
+    ],
+    "path_count": 2,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273756+00:00"
+  },
+  {
+    "id": "api_product:identity:7bee8aff63c7e1ca",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "identity",
+    "display_name": "Identity",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/identity"
+    ],
+    "path_count": 6,
+    "operation_count": 8,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273758+00:00"
+  },
+  {
+    "id": "api_product:invoice_payments:c2f5e6ac0fa9d9c3",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "invoice_payments",
+    "display_name": "Invoice Payments",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/invoice_payments"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273761+00:00"
+  },
+  {
+    "id": "api_product:invoice_rendering_templates:facabd846147fe50",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "invoice_rendering_templates",
+    "display_name": "Invoice Rendering Templates",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/invoice_rendering_templates"
+    ],
+    "path_count": 4,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273766+00:00"
+  },
+  {
+    "id": "api_product:invoiceitems:0629d79b938432a5",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "invoiceitems",
+    "display_name": "Invoiceitems",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/invoiceitems"
+    ],
+    "path_count": 2,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273769+00:00"
+  },
+  {
+    "id": "api_product:invoices:a09d0cfdae8c7286",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "invoices",
+    "display_name": "Invoices",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/invoices"
+    ],
+    "path_count": 15,
+    "operation_count": 18,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273772+00:00"
+  },
+  {
+    "id": "api_product:issuing:1f20025e5860e7ee",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "issuing",
+    "display_name": "Issuing",
+    "business_domain": "issuing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/issuing"
+    ],
+    "path_count": 20,
+    "operation_count": 32,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "issuing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273775+00:00"
+  },
+  {
+    "id": "api_product:link_account_sessions:9778759b9b0ab8ed",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "link_account_sessions",
+    "display_name": "Link Account Sessions",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/link_account_sessions"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273777+00:00"
+  },
+  {
+    "id": "api_product:linked_accounts:0429d582ac71a2d4",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "linked_accounts",
+    "display_name": "Linked Accounts",
+    "business_domain": "connect",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/linked_accounts"
+    ],
+    "path_count": 5,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "connect"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273780+00:00"
+  },
+  {
+    "id": "api_product:mandates:3f879095de65c32d",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "mandates",
+    "display_name": "Mandates",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/mandates"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273783+00:00"
+  },
+  {
+    "id": "api_product:payment_attempt_records:9d9841fc8b13f293",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_attempt_records",
+    "display_name": "Payment Attempt Records",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_attempt_records"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273786+00:00"
+  },
+  {
+    "id": "api_product:payment_intents:54337ac4a937f994",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_intents",
+    "display_name": "Payment Intents",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_intents"
+    ],
+    "path_count": 10,
+    "operation_count": 12,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273788+00:00"
+  },
+  {
+    "id": "api_product:payment_links:09089fe3db4d5d31",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_links",
+    "display_name": "Payment Links",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_links"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273791+00:00"
+  },
+  {
+    "id": "api_product:payment_method_configurations:a56dbe9d3df84d5a",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_method_configurations",
+    "display_name": "Payment Method Configurations",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_method_configurations"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273793+00:00"
+  },
+  {
+    "id": "api_product:payment_method_domains:d058c422e082d363",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_method_domains",
+    "display_name": "Payment Method Domains",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_method_domains"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273796+00:00"
+  },
+  {
+    "id": "api_product:payment_methods:28c429ce0816d877",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_methods",
+    "display_name": "Payment Methods",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_methods"
+    ],
+    "path_count": 4,
+    "operation_count": 6,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273799+00:00"
+  },
+  {
+    "id": "api_product:payment_records:6636f5b5351b06bd",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payment_records",
+    "display_name": "Payment Records",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payment_records"
+    ],
+    "path_count": 8,
+    "operation_count": 8,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273802+00:00"
+  },
+  {
+    "id": "api_product:payouts:97a9b42a46050051",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "payouts",
+    "display_name": "Payouts",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/payouts"
+    ],
+    "path_count": 4,
+    "operation_count": 6,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273804+00:00"
+  },
+  {
+    "id": "api_product:plans:46f92fa7a9ee39d9",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "plans",
+    "display_name": "Plans",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/plans"
+    ],
+    "path_count": 2,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273807+00:00"
+  },
+  {
+    "id": "api_product:prices:3b985e33aac8ab12",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "prices",
+    "display_name": "Prices",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/prices"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273810+00:00"
+  },
+  {
+    "id": "api_product:products:1f8c6d08aec2bcf4",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "products",
+    "display_name": "Products",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/products"
+    ],
+    "path_count": 5,
+    "operation_count": 10,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273812+00:00"
+  },
+  {
+    "id": "api_product:promotion_codes:5b33277fcffee9aa",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "promotion_codes",
+    "display_name": "Promotion Codes",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/promotion_codes"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273815+00:00"
+  },
+  {
+    "id": "api_product:quotes:6025c4a7459230a1",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "quotes",
+    "display_name": "Quotes",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/quotes"
+    ],
+    "path_count": 8,
+    "operation_count": 10,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273818+00:00"
+  },
+  {
+    "id": "api_product:radar:725806a3f5c9d1c4",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "radar",
+    "display_name": "Radar",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/radar"
+    ],
+    "path_count": 7,
+    "operation_count": 12,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273820+00:00"
+  },
+  {
+    "id": "api_product:refunds:883ac2545a666a7b",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "refunds",
+    "display_name": "Refunds",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/refunds"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273822+00:00"
+  },
+  {
+    "id": "api_product:reporting:329c92265e189295",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "reporting",
+    "display_name": "Reporting",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/reporting"
+    ],
+    "path_count": 4,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273826+00:00"
+  },
+  {
+    "id": "api_product:reviews:f2e7f8daa281c4fe",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "reviews",
+    "display_name": "Reviews",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/reviews"
+    ],
+    "path_count": 3,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273829+00:00"
+  },
+  {
+    "id": "api_product:setup_attempts:b495b2448bf879a4",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "setup_attempts",
+    "display_name": "Setup Attempts",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/setup_attempts"
+    ],
+    "path_count": 1,
+    "operation_count": 1,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273831+00:00"
+  },
+  {
+    "id": "api_product:setup_intents:9a1095aa57422b2f",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "setup_intents",
+    "display_name": "Setup Intents",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/setup_intents"
+    ],
+    "path_count": 5,
+    "operation_count": 7,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273833+00:00"
+  },
+  {
+    "id": "api_product:shipping_rates:5674f115e0319c5d",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "shipping_rates",
+    "display_name": "Shipping Rates",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/shipping_rates"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273836+00:00"
+  },
+  {
+    "id": "api_product:sigma:99853f1f5959f00d",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "sigma",
+    "display_name": "Sigma",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/sigma"
+    ],
+    "path_count": 3,
+    "operation_count": 3,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273839+00:00"
+  },
+  {
+    "id": "api_product:sources:305483dab2c59469",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "sources",
+    "display_name": "Sources",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/sources"
+    ],
+    "path_count": 6,
+    "operation_count": 7,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273841+00:00"
+  },
+  {
+    "id": "api_product:subscription_items:9e2806fa2204f34e",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "subscription_items",
+    "display_name": "Subscription Items",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/subscription_items"
+    ],
+    "path_count": 2,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273844+00:00"
+  },
+  {
+    "id": "api_product:subscription_schedules:84cd63839ec1fb2e",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "subscription_schedules",
+    "display_name": "Subscription Schedules",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/subscription_schedules"
+    ],
+    "path_count": 4,
+    "operation_count": 6,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273848+00:00"
+  },
+  {
+    "id": "api_product:subscriptions:710a5ae0cef3b8ae",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "subscriptions",
+    "display_name": "Subscriptions",
+    "business_domain": "billing",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/subscriptions"
+    ],
+    "path_count": 6,
+    "operation_count": 9,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "billing"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273850+00:00"
+  },
+  {
+    "id": "api_product:tax:fe1ef60a185dc540",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "tax",
+    "display_name": "Tax",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/tax"
+    ],
+    "path_count": 11,
+    "operation_count": 14,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273853+00:00"
+  },
+  {
+    "id": "api_product:tax_codes:273111b7aaebc7e1",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "tax_codes",
+    "display_name": "Tax Codes",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/tax_codes"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273855+00:00"
+  },
+  {
+    "id": "api_product:tax_ids:b33d40358382beff",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "tax_ids",
+    "display_name": "Tax Ids",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/tax_ids"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273858+00:00"
+  },
+  {
+    "id": "api_product:tax_rates:4368fdad947a5d0d",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "tax_rates",
+    "display_name": "Tax Rates",
+    "business_domain": "risk_compliance",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/tax_rates"
+    ],
+    "path_count": 2,
+    "operation_count": 4,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "risk_compliance"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273860+00:00"
+  },
+  {
+    "id": "api_product:terminal:784a293a84cc2b8b",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "terminal",
+    "display_name": "Terminal",
+    "business_domain": "terminal",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/terminal"
+    ],
+    "path_count": 17,
+    "operation_count": 26,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "terminal"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273863+00:00"
+  },
+  {
+    "id": "api_product:test_helpers:3373532215f8438f",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "test_helpers",
+    "display_name": "Test Helpers",
+    "business_domain": "test_support",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/test_helpers"
+    ],
+    "path_count": 42,
+    "operation_count": 44,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": true,
+    "tags": [
+      "test_support",
+      "test_only"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273867+00:00"
+  },
+  {
+    "id": "api_product:tokens:d807b8c691524ae9",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "tokens",
+    "display_name": "Tokens",
+    "business_domain": "payments",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/tokens"
+    ],
+    "path_count": 2,
+    "operation_count": 2,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "payments"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273869+00:00"
+  },
+  {
+    "id": "api_product:topups:23381c091fa002b5",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "topups",
+    "display_name": "Topups",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/topups"
+    ],
+    "path_count": 3,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273871+00:00"
+  },
+  {
+    "id": "api_product:transfers:77a7b1a4c31f2b0c",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "transfers",
+    "display_name": "Transfers",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/transfers"
+    ],
+    "path_count": 4,
+    "operation_count": 8,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273874+00:00"
+  },
+  {
+    "id": "api_product:treasury:de44a3153f6f5cf3",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "treasury",
+    "display_name": "Treasury",
+    "business_domain": "money_movement",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/treasury"
+    ],
+    "path_count": 25,
+    "operation_count": 33,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "money_movement"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273876+00:00"
+  },
+  {
+    "id": "api_product:webhook_endpoints:acd0d1570e31c297",
+    "spec_id": "stripe:2026-04-22.dahlia:1e27c7f6bc52b5d5",
+    "provider": "stripe",
+    "product_key": "webhook_endpoints",
+    "display_name": "Webhook Endpoints",
+    "business_domain": "platform_data",
+    "api_versions": [
+      "v1"
+    ],
+    "path_prefixes": [
+      "/v1/webhook_endpoints"
+    ],
+    "path_count": 2,
+    "operation_count": 5,
+    "schema_count": 0,
+    "description": null,
+    "is_test_product": false,
+    "tags": [
+      "platform_data"
+    ],
+    "discovered_at": "2026-05-14T11:05:42.273880+00:00"
+  }
+]
