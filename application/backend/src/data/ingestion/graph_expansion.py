@@ -374,7 +374,11 @@ class GraphRagRetriever:
         max_graph_expansions: int | None = None,
     ) -> list[GraphExpandedResult]:
         expanded_results: list[GraphExpandedResult] = []
-        results_to_expand = milvus_results[:max_graph_expansions] if max_graph_expansions else milvus_results
+        results_to_expand = (
+            milvus_results
+            if max_graph_expansions is None
+            else milvus_results[:max_graph_expansions]
+        )
         for result in results_to_expand:
             try:
                 expanded_results.append(

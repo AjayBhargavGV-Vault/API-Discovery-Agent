@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Discovery Agent</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Workspace">
+        <div class="brand">
+          <div class="brand-mark">AD</div>
+          <div>
+            <h1>API Discovery</h1>
+            <p>Stripe catalog assistant</p>
+          </div>
+        </div>
+
+        <section class="panel status-panel" aria-label="System status">
+          <div class="panel-heading">
+            <span>System</span>
+            <button class="icon-button" id="refreshStatus" title="Refresh status" type="button">↻</button>
+          </div>
+          <div class="status-row">
+            <span class="status-dot" id="apiDot"></span>
+            <span id="apiStatus">Checking API</span>
+          </div>
+          <div class="model-list" id="modelList"></div>
+        </section>
+
+        <section class="panel" aria-label="Mode">
+          <div class="panel-heading">
+            <span>Mode</span>
+          </div>
+          <div class="segmented" role="group" aria-label="Chat mode">
+            <button class="segment active" data-mode="chat" type="button">Chat</button>
+            <button class="segment" data-mode="search" type="button">Search</button>
+          </div>
+          <label class="check-row">
+            <input id="includeTrace" type="checkbox" />
+            <span>Include agent trace</span>
+          </label>
+          <label class="field-label" for="topK">Top K</label>
+          <input id="topK" class="number-input" type="number" min="1" max="50" value="5" />
+        </section>
+
+        <section class="panel" aria-label="Examples">
+          <div class="panel-heading">
+            <span>Try</span>
+          </div>
+          <div class="prompt-list">
+            <button type="button" data-prompt="Which API creates a customer?">Create customer</button>
+            <button type="button" data-prompt="How do I refund a payment?">Refund payment</button>
+            <button type="button" data-prompt="What schema does PaymentIntent return?">PaymentIntent schema</button>
+            <button type="button" data-prompt="Show a Python example for creating a subscription.">Python example</button>
+          </div>
+        </section>
+      </aside>
+
+      <main class="chat-area">
+        <header class="topbar">
+          <div>
+            <h2>Chat</h2>
+            <p id="conversationLabel">New conversation</p>
+          </div>
+          <div class="topbar-actions">
+            <button id="clearChat" class="secondary-button" type="button">New Chat</button>
+          </div>
+        </header>
+
+        <section id="messages" class="messages" aria-live="polite"></section>
+
+        <form id="chatForm" class="composer">
+          <textarea
+            id="messageInput"
+            rows="1"
+            placeholder="Ask about endpoints, schemas, code examples, or related APIs..."
+            aria-label="Message"
+          ></textarea>
+          <button class="send-button" id="sendButton" type="submit" title="Send">↑</button>
+        </form>
+      </main>
+
+      <aside class="inspector" aria-label="Response details">
+        <div class="inspector-tabs" role="tablist">
+          <button class="tab active" data-tab="sources" type="button">Sources</button>
+          <button class="tab" data-tab="trace" type="button">Trace</button>
+          <button class="tab" data-tab="raw" type="button">Raw</button>
+        </div>
+        <div id="sourcesPane" class="inspector-pane"></div>
+        <div id="tracePane" class="inspector-pane hidden"></div>
+        <pre id="rawPane" class="inspector-pane hidden"></pre>
+      </aside>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

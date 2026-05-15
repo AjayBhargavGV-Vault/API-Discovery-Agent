@@ -60,6 +60,12 @@ def search(body: SearchRequest, request: Request) -> SearchResponse:
     semantic_retriever = request.app.state.semantic_retriever
     env_path = request.app.state.env_path
 
+    if semantic_retriever is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Semantic search unavailable: Milvus not connected.",
+        )
+
     graph_expander = Neo4jGraphExpander.from_env(env_path=env_path)
     try:
         rag = GraphRagRetriever(

@@ -16,7 +16,11 @@ DEFAULT_ENV_PATH = BACKEND_DIR / ".env"
 if str(PROJECT_SRC) not in sys.path:
     sys.path.insert(0, str(PROJECT_SRC))
 
-from data.ingestion.milvus_retrieval_test import MilvusRetrievalTest  # noqa: E402
+from chat.chat_engine import ChatEngine  # noqa: E402
+from data.ingestion.milvus_retrieval_test import (  # noqa: E402
+    MilvusRetrievalTest,
+)
+from api.routes.chat import router as chat_router  # noqa: E402
 from api.routes.search import router as search_router  # noqa: E402
 
 logging.basicConfig(
@@ -30,10 +34,26 @@ _log = logging.getLogger("api")
 async def lifespan(app: FastAPI):
     _log.info("Loading embedding model and connecting to Milvus…")
     app.state.env_path = DEFAULT_ENV_PATH
-    app.state.semantic_retriever = MilvusRetrievalTest.from_env(
-        env_path=DEFAULT_ENV_PATH,
-        top_k=10,
-    )
+    try:
+        app.state.semantic_retriever = MilvusRetrievalTest.from_env(
+            env_path=DEFAULT_ENV_PATH,
+            top_k=10,
+        )
+    except Exception as exc:
+        _log.warning(
+            "Milvus unavailable: %s — semantic search disabled.", exc
+        )
+        app.state.semantic_retriever = None
+    _log.info("Initialising ChatEngine…")
+    try:
+        app.state.chat_engine = ChatEngine(
+            semantic_retriever=app.state.semantic_retriever,
+            env_path=DEFAULT_ENV_PATH,
+        )
+        _log.info("ChatEngine ready.")
+    except Exception as exc:
+        _log.error("ChatEngine failed to initialise: %s", exc)
+        app.state.chat_engine = None
     _log.info("API ready.")
     yield
 
@@ -57,6 +77,7 @@ app.add_middleware(
 )
 
 app.include_router(search_router, prefix="/api")
+app.include_router(chat_router, prefix="/api")
 
 
 if __name__ == "__main__":
